@@ -423,6 +423,11 @@ code,kbd,pre{
   overflow:hidden;
   z-index:25;
 }
+/* Hide the diagnostic offer badge without deleting markup */
+.page-cs .cta-offer-stack,
+.page-cs .cta-offer-floating{
+  display:none !important;
+}
 .cta-offer__timer{
   display:grid;
   place-items:center;
@@ -677,6 +682,9 @@ code,kbd,pre{
   gap:8px;
   text-align:right;
 }
+.page-cs .hero-availability__timer{
+  display:none !important;
+}
 .hero-availability__label{
   margin:0;
   font-family:"IBM Plex Sans",ui-sans-serif;
@@ -711,7 +719,7 @@ code,kbd,pre{
   top:0;
   bottom:0;
   left:0;
-  width:10%;
+  width:25%;
   background-color:var(--mulberry);
   background-image:linear-gradient(135deg,
     transparent 0%,
